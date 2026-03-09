@@ -1,0 +1,11 @@
+kubectl apply -n prod -f k8s/base/configmap.yaml
+kubectl apply -n prod -f k8s/base/secret.yaml
+kubectl apply -n prod -f k8s/base/mysql-pv-pvc.yaml
+kubectl apply -n prod -f k8s/base/mysql-deployment.yaml
+kubectl apply -n prod -f k8s/base/mysql-service.yaml
+kubectl apply -n prod -f k8s/base/product-deployment.yaml
+kubectl apply -n prod -f k8s/base/product-service.yaml
+kubectl apply -n prod -f k8s/base/order-deployment.yaml
+kubectl apply -n prod -f k8s/base/order-service.yaml
+kubectl apply -n prod -f k8s/base/frontend-deployment.yaml
+kubectl apply -n prod -f k8s/base/frontend-service.yaml
